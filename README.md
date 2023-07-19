@@ -6,18 +6,18 @@ This script was made as a birthday gift to my girlfriend who loves Fallout and s
 I hereby declare that I do not possess any ownership, rights, or affiliations pertaining to any items, intellectual properties, or assets associated with the Fallout franchise. The contents provided are purely for entertainment and non-commercial purposes. In the event that the rightful owners or authorized representatives of the Fallout franchise request the removal of any content, I shall promptly comply with such requests. All items in this repository are free and can be used by anyone for any purpose. I don't need to be credited. 
 Some words in this script were pulled from the Fallout terminal game C# script made by u/JoshusB, Dictonary.com, and directly from the New Vegas, FO3, and FO4.
 
-![](https://i.imgur.com/GRLzjsc.png)
-
 ![](https://i.imgur.com/BygNBZt.png)
 
-![](https://i.imgur.com/2BjReMS.png)
-
-Screenshots were made using Cool-Retro-Term (https://github.com/Swordfish90/cool-retro-term) made by Filippo Scognamiglio Swordfish90 (https://github.com/Swordfish90)
-
+Screenshot was made using Cool-Retro-Term (https://github.com/Swordfish90/cool-retro-term) made by Filippo Scognamiglio Swordfish90 (https://github.com/Swordfish90)
 
 **For Windows Users:**
 I recommend using gitbash (https://git-scm.com/downloads) simply right click termgame.sh and "Open with" `git-bash.exe` located in `C:\Program Files\Git`
-If you'd like to use the same terminal as I did heres a small tutorial on how to set that up since its not compatible with Windows.
+
+![](https://i.imgur.com/23bdtB1.png)
+
+|Color profile: BACKGROUND: R1, G20, B1 FOREGROUND: R34, G230, B23|   |Font: Fixedsys, 15pt|   |Window: Colums 90, Rows: 40|
+
+If you'd like to use the same terminal as I did in the top screenshot heres a small tutorial on how to set that up since its not compatible with Windows.
 Credit to https://gist.github.com/h3r/2d5dcb2f64cf34b6f7fdad85c57c1a45, https://tvc-16.science/cool-retro-term-wsl2.html, and Specifics https://gist.github.com/specifics.
 
 1. Enable the Windows Developer mode:
