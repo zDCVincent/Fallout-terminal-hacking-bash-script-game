@@ -42,11 +42,11 @@ Credit to https://gist.github.com/h3r/2d5dcb2f64cf34b6f7fdad85c57c1a45, https://
    ![](https://i.imgur.com/Z8OWOId.png)
   
 5. Run your distro terminal environment and make your username and pasword.
+
    
 6. Exit and run WSL (**WIN+R**, then **"wsl"**, then **"OK"**)
    ![](https://i.imgur.com/eut7drb.png)
    
-
 8. Once the WSL terminal is loaded run the following commands (Use **CTRL+SHIFT+V** to paste)
    
 ```bash
