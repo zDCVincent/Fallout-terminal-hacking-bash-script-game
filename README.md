@@ -14,6 +14,7 @@ Some words in this script were pulled from the Fallout terminal game C# script m
 
 Screenshots were made using Cool-Retro-Term (https://github.com/Swordfish90/cool-retro-term) made by Filippo Scognamiglio Swordfish90 (https://github.com/Swordfish90)
 
+
 **For Windows Users:**
 I recommend using gitbash (https://git-scm.com/downloads) simply right click termgame.sh and "Open with" `git-bash.exe` located in `C:\Program Files\Git`
 If you'd like to use the same terminal as I did heres a small tutorial on how to set that up since its not compatible with Windows.
@@ -31,18 +32,23 @@ Credit to https://gist.github.com/h3r/2d5dcb2f64cf34b6f7fdad85c57c1a45, https://
   Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
   ```
 4. Install a distro of your choice. I used Ubuntu on my system. (Try 20.04.6 LTS if you need compatibility with qt5)
+   
    ![](https://i.imgur.com/4BvQ6X2.png)
 
-6. Verify that yout VMP and WSL is on: **windows key** > enter **Windows feature** > **Turn Windows features on or off** then:
+6. Verify that yout VMP and WSL is on: **windows key** > enter **Windows feature** > **Turn Windows features on or off** then
+   
    ![](https://i.imgur.com/9EWeM0T.png)
+
    Note: That some people may have to enable virtualizaion in their UEFI/BIOS (https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1)
    
-7. Install **Windows Subsystem for Linux** (WSL)
+8. Install **Windows Subsystem for Linux** (WSL)
+   
    ![](https://i.imgur.com/Z8OWOId.png)
+  
+9. Run your distro terminal environment and make your username and pasword.
    
-8. Run your distro terminal environment and make your username and pasword.
-   
-9. Exit and run WSL (**WIN+R**, then **"wsl"**, then **"OK"**)
+10. Exit and run WSL (**WIN+R**, then **"wsl"**, then **"OK"**)
+    
    ![](https://i.imgur.com/eut7drb.png)
 
 
