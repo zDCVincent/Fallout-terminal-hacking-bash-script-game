@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo "v9.3pub"
 
 # TODO: highscore, replace entries typed by user w/ ".........", make duds multifunctional to have a chance to remove one word that you havent typed yet, maybe add color to certain bits where appropriate, suggestions?
