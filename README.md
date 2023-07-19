@@ -6,11 +6,11 @@ This script was made as a birthday gift to my girlfriend who loves Fallout and s
 I hereby declare that I do not possess any ownership, rights, or affiliations pertaining to any items, intellectual properties, or assets associated with the Fallout franchise. The contents provided are purely for entertainment and non-commercial purposes. In the event that the rightful owners or authorized representatives of the Fallout franchise request the removal of any content, I shall promptly comply with such requests. All items in this repository are free and can be used by anyone for any purpose. I don't need to be credited. 
 Some words in this script were pulled from the Fallout terminal game C# script made by u/JoshusB, Dictonary.com, and directly from the New Vegas, FO3, and FO4.
 
-![](https://imgur.com/GRLzjsc)
+![](https://i.imgur.com/GRLzjsc.png)
 
-![](https://imgur.com/BygNBZt)
+![](https://i.imgur.com/BygNBZt.png)
 
-![](https://imgur.com/undefined)
+![](https://i.imgur.com/2BjReMS.png)
 
 Screenshots were made using Cool-Retro-Term (https://github.com/Swordfish90/cool-retro-term) made by Filippo Scognamiglio Swordfish90 (https://github.com/Swordfish90)
 
@@ -24,21 +24,21 @@ Credit to https://gist.github.com/h3r/2d5dcb2f64cf34b6f7fdad85c57c1a45, https://
  - **Click** on **"For Developers"** tab on the left panel
  - **Choose** "Developer mode"
   
-  ![](https://imgur.com/80C1sq3)
+  ![](https://i.imgur.com/80C1sq3.png)
 
  - Press **windows** key > type **"Power Shell"** > right click > click on **"Run as Administrator"** and paste:
   ```bash
   Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
   ```
 4. Install a distro of your choice. I used Ubuntu on my system. (Try 20.04.6 LTS if you need compatibility with qt5)
-   ![](https://imgur.com/4BvQ6X2)
+   ![](https://i.imgur.com/4BvQ6X2.png)
 
 6. Verify that yout VMP and WSL is on: **windows key** > enter **Windows feature** > **Turn Windows features on or off** then:
-   ![](https://imgur.com/9EWeM0T)
+   ![](https://i.imgur.com/9EWeM0T.png)
    Note: That some people may have to enable virtualizaion in their UEFI/BIOS (https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1)
    
 7. Install **Windows Subsystem for Linux** (WSL)
-   ![](https://imgur.com/Z8OWOId)
+   ![](https://i.imgur.com/Z8OWOId.png)
    
 8. Run your distro terminal environment and make your username and pasword.
    
