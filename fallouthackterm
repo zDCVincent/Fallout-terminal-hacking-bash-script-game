@@ -1,5 +1,7 @@
 #!/bin/bash
-echo "v9"
+echo "v9.3pub"
+
+# TODO: highscore, replace entries typed by user w/ ".........", make duds multifunctional to have a chance to remove one word that you havent typed yet, maybe add color to certain bits where appropriate, suggestions?
 
 # Function to start a new game
 start_new_game() {
@@ -40,7 +42,7 @@ similarity_score()
 # Initialize RANDOM with the process ID
 RANDOM=$$
 
-# Arrays of words for each difficulty level
+# Arrays of words for each difficulty level, you can add words here if you pertain to the format.
 # Difficulty 1
 difficulty_1_words=(
   "FRIED" "TREES" "RIGID" "HIRED" "TRIES" "WRITE" "TRIED" "GREED" "DRIED" "BRAIN" "SKIES" "LAWNS" "GHOST" "CAUSE" "PAINT" "SHINY" "MAKES" "GAINS" "THIEF" "BASES" "RAISE" "REFER" "CARES" "TAKEN" "WAKES" "WAVES" "WARNS" "SAVES"
@@ -96,7 +98,7 @@ clear
 # Generate a random password from the selected words
 password=${words[RANDOM % ${#words[@]}]}
 
-# Generate hack lines for the game
+# Generate hack lines for the game, change this number (19 default to make more "hacklines")
 hack_lines=()
 for ((i = 0; i < 19; i++)); do
   symbols1=$(generate_symbols)
@@ -105,7 +107,7 @@ for ((i = 0; i < 19; i++)); do
   hack_lines+=("$line")
 done
 
-# Randomly choose a set number of hack lines from the generated hack lines
+# Randomly choose a set number of hack lines from the generated hack lines [WORDS] Change this number to make more words generate per game (same as rest with [WORDS])
 selected_hacklines=()
 used_hacklines=()
 for ((i = 0; i < 10; i++)); do
@@ -127,7 +129,7 @@ for ((i = 0; i < 10; i++)); do
   unset "hack_lines[$index]"
 done
 
-# Generate the selected eight words
+# Generate the selected # words [WORDS] Change this number to make more words generate per game (same as rest with [WORDS])
 selected_words=()
 while [[ ${#selected_words[@]} -lt 10 ]]; do
   word=${words[RANDOM % ${#words[@]}]}
@@ -136,12 +138,13 @@ while [[ ${#selected_words[@]} -lt 10 ]]; do
   fi
 done
 
-# Concatenate the selected hack lines and the selected words
+# Concatenate the selected hack lines and the selected words, [WORDS] Change this number to make more words generate per game (same as rest with [WORDS])
 for ((i = 0; i < 10; i++)); do
   hack_line="${selected_hacklines[i]}"
   selected_word="${selected_words[i]}"
   position_choice=$((RANDOM % 2))
 
+# Where words are placed within "hacklines"
   if ((position_choice == 0)); then
     position1=$((RANDOM % 23 + 9))
     selected_hacklines[i]="${hack_line:0:position1}${selected_word}${hack_line:position1+${#selected_word}}"
@@ -323,6 +326,8 @@ for ((i = 0; i < max_length; i++)); do
 done
 
 clear
+
+# Remove the pound sign to enable developer mode, do same for rest of instances
 
 # Display initial game information
 echo "ROBCO INDUSTRIES (TM) TERMLINK PROTOCOL"
