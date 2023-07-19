@@ -1,46 +1,90 @@
-# Fallout-terminal-hacking-bash-script-game
-A recreation of the fallout terminal in bash script. Happy birthday to my girlfriend!
+# Fallout terminal hacking: in bash script!
+This script was made as a birthday gift to my girlfriend who loves Fallout and specifically terminal hacking over the course of three weeks. Happy birthday to her! JUL19!!
+*Compatible with Windows, Linux, and MAC.*
 
-I have no ownership over any items in the Fallout franchise and should this be requested to be taken down it will be.
-All items in this repository can be used by anyone. No need to credit. To be noted that I took words used in the game from dictionary.com, fallout, and a pre-existing C# script made by u/JoshusB.
-This script was made as a birthday gift to my girlfriend who loves fallout and specifically terminal hacking. Gonna marry her soon.
+**DISCLAIMER:**
+I hereby declare that I do not possess any ownership, rights, or affiliations pertaining to any items, intellectual properties, or assets associated with the Fallout franchise. The contents provided are purely for entertainment and non-commercial purposes. In the event that the rightful owners or authorized representatives of the Fallout franchise request the removal of any content, I shall promptly comply with such requests. All items in this repository are free and can be used by anyone for any purpose. I don't need to be credited. 
+Some words in this script were pulled from the Fallout terminal game C# script made by u/JoshusB, Dictonary.com, and directly from the New Vegas, FO3, and FO4.
 
-To run this bash script I recommend opening the fallouthackterm.sh file using gitbash to play.
-If you want to use the same terminal as I did and are on windows/linux/mac. I used Cool-Retro-Term: https://github.com/Swordfish90/cool-retro-term (specifically 1.1.1 for compatibility reasons)
+![](https://imgur.com/GRLzjsc)
 
-Setup that I used for Cool-Retro-Term for windows users (edited version of this guide:https://gist.github.com/h3r/2d5dcb2f64cf34b6f7fdad85c57c1a45) and this guide (https://tvc-16.science/cool-retro-term-wsl2.html) Credits to "Specifics" https://gist.github.com/specifics for his comment that helped grease the gears.
-1. Enable the windows "Developer mode"
-2. Run Powershell as administator and run:
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-3. Install a distro of your choice. I used Ubuntu. (Try 20.04.6 LTS if you need compatibility with qt5)
-4. Install Windows Subsystem for Linux (WSL)
-5. Run your distro terminal environment and make your username and pasword.
-6. Exit and run WSL (WIN+R, then "wsl", then "OK")
-7. Once WSL terminal is loaded run the following commands (Use CTRL+SHIFT+V to paste... I had to manually type it all the first time cause I didn't know this...)
-cd /mnt/c/users/YOURWINDOWSUSERNAMEHERE
+![](https://imgur.com/BygNBZt)
+
+![](https://imgur.com/undefined)
+
+Screenshots were made using Cool-Retro-Term (https://github.com/Swordfish90/cool-retro-term) made by Filippo Scognamiglio Swordfish90 (https://github.com/Swordfish90)
+
+**For Windows Users:**
+I recommend using gitbash (https://git-scm.com/downloads) simply right click termgame.sh and "Open with" `git-bash.exe` located in `C:\Program Files\Git`
+If you'd like to use the same terminal as I did heres a small tutorial on how to set that up since its not compatible with Windows.
+Credit to https://gist.github.com/h3r/2d5dcb2f64cf34b6f7fdad85c57c1a45, https://tvc-16.science/cool-retro-term-wsl2.html, and Specifics https://gist.github.com/specifics.
+
+1. Enable the Windows Developer mode:
+ - Press the **windows** key  > type **"Windows update and settings"** > hit Enter
+ - **Click** on **"For Developers"** tab on the left panel
+ - **Choose** "Developer mode"
+  
+  ![](https://imgur.com/80C1sq3)
+
+ - Press **windows** key > type **"Power Shell"** > right click > click on **"Run as Administrator"** and paste:
+  ```bash
+  Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+  ```
+4. Install a distro of your choice. I used Ubuntu on my system. (Try 20.04.6 LTS if you need compatibility with qt5)
+   ![](https://imgur.com/4BvQ6X2)
+
+6. Verify that yout VMP and WSL is on: **windows key** > enter **Windows feature** > **Turn Windows features on or off** then:
+   ![](https://imgur.com/9EWeM0T)
+   Note: That some people may have to enable virtualizaion in their UEFI/BIOS (https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1)
+   
+7. Install **Windows Subsystem for Linux** (WSL)
+   ![](https://imgur.com/Z8OWOId)
+   
+8. Run your distro terminal environment and make your username and pasword.
+   
+9. Exit and run WSL (**WIN+R**, then **"wsl"**, then **"OK"**)
+   ![](https://i.imgur.com/eut7drb.png)
+
+
+
+12. Once the WSL terminal is loaded run the following commands (Use **CTRL+SHIFT+V** to paste... I had to manually type it all the first time cause I didn't know this...)
+   
+```bash
+cd /mnt/c/users/WINDOWS-USERNAME-HERE
 sudo apt-get install git
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt install build-essential qmlscene qt5-qmake qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools qtdeclarative5-dev qml-module-qtquick-controls2 qml-module-qtgraphicaleffects qml-module-qtquick-dialogs qml-module-qtquick-localstorage qml-module-qtquick-window2 qml-module-qt-labs-settings qml-module-qt-labs-folderlistmodel qtquickcontrols2-5-dev
 strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so.5
-sudo apt install libfuse2         (or sudo apt-get install fuse libfuse2 for ubuntu < 22.04)
+```
+
+for Ubuntu latest ed.
+```bash
+sudo apt install libfuse2
+```
+
+or for Ubuntu versions < 22.04
+```bash
+sudo apt-get install fuse libfuse2
+```
+
+then
+```bash
 wget https://github.com/Swordfish90/cool-retro-term/releases/download/1.1.1/Cool-Retro-Term-1.1.1-x86_64.AppImage
 chmod a+x Cool-Retro-Term-1.1.1-x86_64.AppImage
 ./Cool-Retro-Term-1.1.1-x86_64.AppImage
-(inside the cool-retro-terminal)
-cd /mnt/c/users/YOURWINDOWSUSERNAMEHERE/WHEREYOUPLACEDTHEFILE (desktop... downloads)
+```
 
-In the future to run this terminal again,
-win+r, wsl, OK
-cd /mnt/c/users/YOURWINDOWSUSERNAMEHERE
+Inside the Retro-Terminal
+If you placed `termgame.sh` on your desktop run:
+```
+cd /mnt/c/users/WINDOWS-USERNAME-HERE/desktop
 ls
-./Cool-Retro-Term-1.1.1-x86_64.AppImage
+./termgame.sh
+```
 
 For a quick start shortcut tutorial for the lazies like me:
 https://tvc-16.science/cool-retro-term-wsl2.html
 (Near bottom of the blog)
-
-quickstart.bat :
-start /min wsl -d ubuntu [folder where you saved the appimage]/Cool-Retro-Term-1.1.1-x86_64.AppImage
 
 My discord is vn: vn6100
