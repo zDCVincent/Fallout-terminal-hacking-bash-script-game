@@ -30,23 +30,24 @@ Credit to https://gist.github.com/h3r/2d5dcb2f64cf34b6f7fdad85c57c1a45, https://
   ```bash
   Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
   ```
-4. Install a distro of your choice. I used Ubuntu on my system. (Try 20.04.6 LTS if you need compatibility with qt5)
+2. Install a distro of your choice. I used Ubuntu on my system. (Try 20.04.6 LTS if you need compatibility with qt5)
    ![](https://i.imgur.com/4BvQ6X2.png)
 
-6. Verify that yout VMP and WSL is on: **windows key** > enter **Windows feature** > **Turn Windows features on or off** then
+3. Verify that yout VMP and WSL is on: **windows key** > enter **Windows feature** > **Turn Windows features on or off** then
    ![](https://i.imgur.com/9EWeM0T.png)
 
    Note: That some people may have to enable virtualizaion in their UEFI/BIOS (https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1)
    
-8. Install **Windows Subsystem for Linux** (WSL)
+4. Install **Windows Subsystem for Linux** (WSL)
    ![](https://i.imgur.com/Z8OWOId.png)
   
-9. Run your distro terminal environment and make your username and pasword.
+5. Run your distro terminal environment and make your username and pasword.
    
-10. Exit and run WSL (**WIN+R**, then **"wsl"**, then **"OK"**)
+6. Exit and run WSL (**WIN+R**, then **"wsl"**, then **"OK"**)
    ![](https://i.imgur.com/eut7drb.png)
+   
 
-12. Once the WSL terminal is loaded run the following commands (Use **CTRL+SHIFT+V** to paste)
+8. Once the WSL terminal is loaded run the following commands (Use **CTRL+SHIFT+V** to paste)
    
 ```bash
 cd /mnt/c/users/WINDOWS-USERNAME-HERE
