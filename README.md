@@ -6,7 +6,7 @@ All items in this repository can be used by anyone. No need to credit. To be not
 This script was made as a birthday gift to my girlfriend who loves fallout and specifically terminal hacking. Gonna marry her soon.
 
 To run this bash script I recommend opening the fallouthackterm.sh file using gitbash to play.
-If you want to use the same terminal as I did and are on windows/linux/mac. I used Cool-Retro-Term.
+If you want to use the same terminal as I did and are on windows/linux/mac. I used Cool-Retro-Term: https://github.com/Swordfish90/cool-retro-term (specifically 1.1.1 for compatibility reasons)
 
 Setup that I used for Cool-Retro-Term for windows users (edited version of this guide:https://gist.github.com/h3r/2d5dcb2f64cf34b6f7fdad85c57c1a45) and this guide (https://tvc-16.science/cool-retro-term-wsl2.html) Credits to "Specifics" https://gist.github.com/specifics for his comment that helped grease the gears.
 1. Enable the windows "Developer mode"
@@ -40,4 +40,7 @@ For a quick start shortcut tutorial for the lazies like me:
 https://tvc-16.science/cool-retro-term-wsl2.html
 (Near bottom of the blog)
 
-start /min wsl -d ubuntu [folder where you saved the appimage]/Cool-Retro-Term-1.1.1-x86_64.AppImage 
+quickstart.bat :
+start /min wsl -d ubuntu [folder where you saved the appimage]/Cool-Retro-Term-1.1.1-x86_64.AppImage
+
+My discord is vn: vn6100
