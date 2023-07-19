@@ -1,5 +1,6 @@
 I have no ownership over any items in the Fallout franchise and should this be requested to be taken down it will be.
-All items in this repository can be used by anyone. No need to credit.
+All items in this repository can be used by anyone. No need to credit. To be noted that I took words used in the game from dictionary.com, fallout, and a pre-existing C# script made by u/JoshusB.
+This script was made as a birthday gift to my girlfriend who loves fallout and specifically terminal hacking. Gonna marry her soon.
 
 To run this bash script I recommend opening the ROBCO TRAINING PROTOCOL TERMINAL.sh file using gitbash to play.
 If you want to use the same terminal as I did and are on windows/linux/mac. I used Cool-Retro-Term.
