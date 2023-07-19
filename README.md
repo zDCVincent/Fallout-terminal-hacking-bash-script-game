@@ -1,6 +1,6 @@
 # Fallout terminal hacking: in bash script!
 This script was made as a birthday gift to my girlfriend who loves Fallout and specifically terminal hacking over the course of three weeks. Happy birthday to her! JUL19!!
-*Compatible with Windows, Linux, and MAC.*
+*Compatible with Windows, Linux, and Mac.*
 
 **DISCLAIMER:**
 I hereby declare that I do not possess any ownership, rights, or affiliations pertaining to any items, intellectual properties, or assets associated with the Fallout franchise. The contents provided are purely for entertainment and non-commercial purposes. In the event that the rightful owners or authorized representatives of the Fallout franchise request the removal of any content, I shall promptly comply with such requests. All items in this repository are free and can be used by anyone for any purpose. I don't need to be credited. 
