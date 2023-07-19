@@ -3,7 +3,8 @@ This script was made as a birthday gift to my girlfriend who loves Fallout and s
 *Compatible with Windows, Linux, and Mac.*
 
 **DISCLAIMER:**
-I hereby declare that I do not possess any ownership, rights, or affiliations pertaining to any items, intellectual properties, or assets associated with the Fallout franchise. The contents provided are purely for entertainment and non-commercial purposes. In the event that the rightful owners or authorized representatives of the Fallout franchise request the removal of any content, I shall promptly comply with such requests. All items in this repository are free and can be used by anyone for any purpose. I don't need to be credited. 
+I hereby declare that I do not possess any ownership, rights, or affiliations pertaining to any items, intellectual properties, or assets associated with the Fallout franchise. The contents provided are purely for entertainment and non-commercial purposes. In the event that the rightful owners or authorized representatives of the Fallout franchise request the removal of any content, I shall promptly comply with such requests. 
+All items in this repository are free and can be used by anyone for any purpose. I don't need to be credited. 
 Some words in this script were pulled from the Fallout terminal game C# script made by u/JoshusB, Dictonary.com, and directly from the New Vegas, FO3, and FO4.
 
 ![](https://i.imgur.com/BygNBZt.png)
